@@ -167,8 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37b8d6cd1d56d64192977e72726dc76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pools: []
-  Instance: {fileID: 0}
+  pools:
+  - tag: Cube
+    prefab: {fileID: 6598363379412699064, guid: 3e88663d2c293884b8252d9cce92def0, type: 3}
+    size: 1000
 --- !u!1 &358509249
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,6 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1425ecb627a8fcf46843ac4073edff61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tag: Cube
 --- !u!4 &358509251
 Transform:
   m_ObjectHideFlags: 0
