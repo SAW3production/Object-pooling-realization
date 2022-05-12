@@ -6,7 +6,7 @@ public class ObjectPooler : MonoBehaviour
 {
     public Dictionary<string, Queue<GameObject>> poolDictionary;
     public List<Pool> pools;
-    public ObjectPooler Instance;
+    public static ObjectPooler Instance;
 
 
 
