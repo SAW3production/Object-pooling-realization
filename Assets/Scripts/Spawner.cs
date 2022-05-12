@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    [SerializeField] private new string tag;
     private void FixedUpdate()
     {
-        ObjectPooler.Instance.SpawnFromPool("Cube", this.transform.position, this.transform.rotation);
+        ObjectPooler.Instance.SpawnFromPool(tag, this.transform.position, this.transform.rotation);
     }
 }
