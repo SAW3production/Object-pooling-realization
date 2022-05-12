@@ -12,7 +12,7 @@ public class CubeBehaviour : MonoBehaviour, IPooledObject // INHERITANCE
         _theRigidBody = this.GetComponent<Rigidbody>();
         _spawnPower = Random.Range(-50,50);
     }
-    public void OnObjectSpawn()
+    public void OnObjectSpawn() // POLYMORPHISM
     {
         
         _theRigidBody.velocity = GenerateRandomForce();
